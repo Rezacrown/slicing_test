@@ -1,12 +1,14 @@
 // @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./node_modules/bootstrap/scss//bootstrap";
+@import "./_addingColor";
 
 // $secondary: white;
 
 *,
 body {
-    font-family: "Lato";
+    // font-family: "Lato";
     font-weight: 900;
+    font-family: "Lato", sans-serif;
 }
 
 header {
@@ -47,5 +49,59 @@ header {
         font-size: 20px;
         font-weight: 400;
         color: $gray-600;
+    }
+}
+
+main {
+    .card {
+        // border-radius:;
+        border: none;
+        .card-body {
+            .card-title {
+                color: $primary;
+                line-height: 32px;
+            }
+            .card-text {
+                color: $gray-700;
+            }
+        }
+
+        .dashed {
+            width: 100%;
+            height: 1.5px;
+            padding: 5px 0;
+            &::before {
+                content: "";
+                position: absolute;
+                padding: 5px;
+                border-bottom-right-radius: 50%;
+                border-top-right-radius: 50%;
+                background-color: $gray-100;
+                left: 0px;
+            }
+            &::after {
+                content: "";
+                padding: 5px;
+                background-color: $gray-100;
+                border-bottom-left-radius: 50%;
+                border-top-left-radius: 50%;
+                position: absolute;
+                right: 0px;
+            }
+
+            border-bottom: 1.5px dashed $gray-400;
+        }
+
+        .card-bottom {
+            button {
+                border-radius: 50px;
+                font-size: 16px;
+                color: $white;
+            }
+            div {
+                font-size: 12px;
+                letter-spacing: 0.7px;
+            }
+        }
     }
 }

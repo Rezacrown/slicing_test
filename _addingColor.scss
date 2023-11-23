@@ -1,0 +1,7 @@
+@import url("node_modules/bootstrap/scss/_variables.scss");
+
+@each $color, $value in $grays {
+    .text-gray-#{$color} {
+        color: $value;
+    }
+}
