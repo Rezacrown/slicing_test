@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --watch ./style.scss ./disk/custom.css"
+    "dev": "sass --watch ./style.scss ./disk/boostrap-custom.css",
+    "build": "sass ./style.scss ./disk/boostrap-custom.css"
   },
   "keywords": [],
   "author": "",
