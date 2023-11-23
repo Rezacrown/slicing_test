@@ -5,3 +5,9 @@
         color: $value;
     }
 }
+
+@each $color, $value in $grays {
+    .border-gray-#{$color} {
+        color: $value;
+    }
+}

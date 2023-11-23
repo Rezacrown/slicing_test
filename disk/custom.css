@@ -11892,10 +11892,47 @@ textarea.form-control-lg {
   color: #212529;
 }
 
+.border-gray-100 {
+  color: #f8f9fa;
+}
+
+.border-gray-200 {
+  color: #e9ecef;
+}
+
+.border-gray-300 {
+  color: #dee2e6;
+}
+
+.border-gray-400 {
+  color: #ced4da;
+}
+
+.border-gray-500 {
+  color: #adb5bd;
+}
+
+.border-gray-600 {
+  color: #6c757d;
+}
+
+.border-gray-700 {
+  color: #495057;
+}
+
+.border-gray-800 {
+  color: #343a40;
+}
+
+.border-gray-900 {
+  color: #212529;
+}
+
 *,
 body {
   font-weight: 900;
   font-family: "Lato", sans-serif;
+  line-height: 24px;
 }
 
 header .navbar-brand {
@@ -12000,6 +12037,12 @@ main .card .card-bottom div {
 
 footer .border-top p {
   font-size: 13px;
+}
+
+.article-container header {
+  position: relative;
+  right: 0;
+  margin-left: 16%;
 }
 
 /*# sourceMappingURL=custom.css.map */
