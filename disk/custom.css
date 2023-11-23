@@ -11898,6 +11898,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+header .navbar-brand {
+  font-size: 16px;
+  transition: all 0.266s;
+}
+header .navbar-brand:hover {
+  color: #f8504a;
+  cursor: pointer;
+}
 header .dropdown {
   width: 70px;
   height: 30px;
@@ -11907,18 +11915,15 @@ header .dropdown .dropdown-toggle {
   border-width: 0.8px;
   border-radius: 50px;
 }
+header .dropdown .dropdown-menu {
+  left: -60px;
+  margin: 20px 0;
+}
 header .devider {
   content: "";
   color: #dee2e6;
   width: 1px;
   height: 30px;
-}
-header .navbar-brand {
-  font-size: 16px;
-  transition: all 0.266s;
-}
-header .navbar-brand:hover {
-  color: #f8504a;
 }
 header .active {
   color: #f8504a;
@@ -11991,6 +11996,10 @@ main .card .card-bottom div {
 .pagination-container .pagination .page-link.active {
   color: #fff;
   background-color: #f8504a;
+}
+
+footer .border-top p {
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=custom.css.map */
