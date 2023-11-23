@@ -1,0 +1,51 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss//bootstrap";
+
+// $secondary: white;
+
+*,
+body {
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+header {
+    .dropdown {
+        width: 70px;
+        height: 30px;
+
+        .dropdown-toggle {
+            border-color: $black;
+            border-width: 0.8px;
+            border-radius: 50px;
+        }
+    }
+
+    .devider {
+        // background-color: #231f201a;
+        content: "";
+        color: $gray-300;
+        width: 1px;
+        height: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+        transition: all 0.266s;
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .active {
+        color: $primary;
+    }
+
+    .nav-with-devider::after {
+        content: "|";
+        width: 1px;
+        font-size: 20px;
+        font-weight: 400;
+        color: $gray-600;
+    }
+}
