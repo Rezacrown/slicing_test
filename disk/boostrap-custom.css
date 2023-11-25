@@ -12047,5 +12047,9 @@ footer .border-top p {
   right: 0;
   margin-left: 16%;
 }
+.article-container header p,
+.article-container header span {
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=boostrap-custom.css.map */

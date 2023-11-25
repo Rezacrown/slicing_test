@@ -155,5 +155,10 @@ footer {
         position: relative;
         right: 0;
         margin-left: 16%;
+
+        p,
+        span {
+            font-size: 14px;
+        }
     }
 }
