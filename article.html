@@ -29,20 +29,21 @@
           <!--brand logo end -->
           <!-- menu navigation start -->
           <button
+            aria-expanded="false"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
+            data-bs-target="#navbarNavDropdown2"
+            aria-controls="navbarNavDropdown2"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse col" id="navbarNavDropdown">
+
+          <div class="navbar-collapse col" id="navbarNavDropdown2">
             <ul class="navbar-nav offset-lg-5">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Art</a>
+                <a class="nav-link" href="#">About Art</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">For Brand</a>
@@ -51,7 +52,9 @@
                 <a class="nav-link" href="#">For Stores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Promotion</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Promotion</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
@@ -83,7 +86,7 @@
     <!-- header end -->
 
     <!-- hero start -->
-    <section class="mx-4 pb-5">
+    <section class="mx-4 pt-3 pb-5">
       <img
         src="./public/assets/images/hero-img.jpg"
         class="img-fluid"
@@ -327,10 +330,11 @@
     <!-- content end -->
 
     <!-- categories card section start -->
-    <section class="container-lg py-3 my-5">
-      <h3 class="text-primary">Relate Insights</h3>
-      <div class="row mt-3">
-        <div class="col-4">
+    <section class="container-lg px-5 pt-5 my-lg-5">
+      <h3 class="text-primary my-5" style="font-size: 40px">Relate Insights</h3>
+
+      <div class="row row-cols-md-2 row-cols-lg-3">
+        <div class="my-3 col-md-6">
           <div class="card h-100 shadow-sm">
             <img
               src="./public/assets/images/card-item-7.jpg"
@@ -361,7 +365,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="my-3 col-md-6">
           <div class="card h-100 shadow-sm">
             <img
               src="./public/assets/images/card-item-8.jpg"
@@ -391,7 +395,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="my-3 col-md-6">
           <div class="card h-100 shadow-sm">
             <img
               src="./public/assets/images/card-item-9.jpg"
@@ -546,6 +550,7 @@
     <!-- script start -->
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
     <!-- script end -->
   </body>
 </html>
