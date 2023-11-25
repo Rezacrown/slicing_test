@@ -19,64 +19,55 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="pb-3 pt-1">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid mx-3 px-lg-5">
-          <!--brand logo start -->
-          <a class="navbar-brand col-auto" href="index.html">
-            <img src="./public/assets/brand-logo.svg" alt="logo" />
-          </a>
-          <!--brand logo end -->
-          <!-- menu navigation start -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse col" id="navbarNavDropdown">
-            <ul class="navbar-nav offset-lg-5">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Art</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">For Brand</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">For Stores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Promotion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item vr me-3 ms-2 d-none d-lg-block"></li>
-              <li class="nav-item dropdown">
-                <button
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  EN
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">EN</a></li>
-                </ul>
-              </li>
-            </ul>
+    <header class="my-2 pb-3">
+      <nav class="navbar">
+        <div class="container-lg mx-5 row">
+          <!-- brand logo start -->
+          <div class="navbar-brand col-1">
+            <a href="./index.html">
+              <img
+                src="./public/assets/brand-logo.svg"
+                alt="Logo"
+                width="60"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+            </a>
           </div>
-          <!-- menu navigation end -->
+          <!-- brand logo end -->
+
+          <!-- nav start -->
+          <div class="col-auto row align-items-center">
+            <!-- navigation start -->
+            <div class="col-auto nav-with-devider">
+              <a class="navbar-brand text-dark" href="#">About art</a>
+              <a class="navbar-brand" href="#">For Brands</a>
+              <a class="navbar-brand" href="#">For Stores</a>
+              <a class="navbar-brand active" href="#">Promotion</a>
+              <a class="navbar-brand" href="#">Blog</a>
+              <a class="navbar-brand" href="#">Contact</a>
+            </div>
+            <!-- navigation end -->
+            <!-- drowdown start -->
+            <!-- <span class="devider"></span> -->
+            <div class="dropdown col-3">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EN
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button class="dropdown-item" type="button">EN</button>
+                </li>
+              </ul>
+            </div>
+            <!-- drowdown end -->
+          </div>
+          <!-- nav end -->
         </div>
       </nav>
     </header>

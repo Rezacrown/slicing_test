@@ -8,6 +8,7 @@
 body {
     // font-family: "Lato";
     font-weight: 900;
+    font-size: 16px;
     font-family: "Lato", sans-serif;
     line-height: 24px;
     // font-size: 16px;
@@ -23,39 +24,46 @@ header {
         }
     }
 
-    .dropdown {
-        width: 70px;
-        height: 30px;
+    .navbar-nav {
+        .nav-item {
+            & .nav-link {
+                color: $dark;
+                transition: all 0.3s ease-in;
+                &.active {
+                    color: $primary;
+                }
 
-        .dropdown-toggle {
-            border-color: $black;
-            border-width: 0.8px;
-            border-radius: 50px;
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            &.dropdown {
+                border: 1px solid $dark;
+                border-radius: 50px;
+                gap: 8px;
+                width: 70px;
+                height: 30px;
+                align-items: end;
+                margin: 5px 0;
+
+                & a,
+                .dropdown-toggle {
+                    display: block;
+
+                    padding: 4px 12px;
+                }
+
+                .dropdown-toggle:hover {
+                    color: $dark;
+                }
+            }
         }
-        .dropdown-menu {
-            left: -60px;
-            margin: 20px 0;
+
+        &.vr {
+            height: 30px;
+            width: 1px;
         }
-    }
-
-    .devider {
-        // background-color: #231f201a;
-        content: "";
-        color: $gray-300;
-        width: 1px;
-        height: 30px;
-    }
-
-    .active {
-        color: $primary;
-    }
-
-    .nav-with-devider::after {
-        content: "|";
-        width: 1px;
-        font-size: 20px;
-        font-weight: 400;
-        color: $gray-600;
     }
 }
 
